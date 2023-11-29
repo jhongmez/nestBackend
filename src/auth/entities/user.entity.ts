@@ -3,6 +3,8 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 @Schema()
 // * Propiedades de la BD
 export class User {
+   
+   _id?: string;
 
    @Prop({ unique: true, required: true})
 	email: string;
