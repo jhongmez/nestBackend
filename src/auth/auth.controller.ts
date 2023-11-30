@@ -38,7 +38,7 @@ export class AuthController {
 		const user = req['user'] as User;
 
 		return {
-			user,
+			user: user,
 			token: this.authService.getJwtToken({ id: user._id })
 		}
 	}
